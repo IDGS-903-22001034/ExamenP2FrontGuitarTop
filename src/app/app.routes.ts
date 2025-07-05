@@ -12,5 +12,5 @@ export const routes: Routes = [
     {path: 'contacto', component: Contacto},
     {path: 'footer', component: Footer},
     {path: 'cabecera', component: Cabecera},
-    { path: '**', redirectTo: '' } // Redirección para rutas no encontradas
+    { path: '**', redirectTo: '' }
 ];

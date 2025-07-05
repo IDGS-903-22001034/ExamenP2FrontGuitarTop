@@ -14,7 +14,7 @@ export class Buscador {
   categoriaActual: string = '';
 
   constructor(private router: Router, private route: ActivatedRoute) {
-    // Leer la categoría si ya viene desde la URL
+
     this.route.queryParams.subscribe(params => {
       this.categoriaActual = params['categoria'] || '';
     });
