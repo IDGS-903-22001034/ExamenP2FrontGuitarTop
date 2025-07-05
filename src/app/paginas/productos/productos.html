@@ -1,0 +1,21 @@
+<br>
+<br>
+<br>
+<br>
+<app-buscador></app-buscador>
+  
+<div class="album py-5 bg-body-tertiary">
+  <div class="container">
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+      <div class="col" *ngFor="let producto of listaProductos">
+        <div class="card shadow-sm">
+          <img [src]="producto.imagen" class="bd-placeholder-img card-img-top" width="100%" height="225"
+               alt="{{ producto.nombre }}" style="object-fit: cover;">
+          <div class="card-body">
+            <p class="card-text">{{ producto.descripcion }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

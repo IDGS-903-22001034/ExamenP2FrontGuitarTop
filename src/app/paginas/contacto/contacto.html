@@ -1,0 +1,116 @@
+<br>
+<br>
+<br>
+<div class="contact-page bg-dark text-white py-5">
+  <div class="container">
+    <!-- Encabezado -->
+    <div class="text-center mb-5">
+      <h2 class="display-4 fw-bold mb-3">Contáctanos</h2>
+      <p class="lead text-warning">¿Tienes preguntas? Estamos aquí para ayudarte.</p>
+    </div>
+
+    <div class="row g-5">
+      <!-- Formulario de contacto -->
+      <div class="col-lg-6">
+        <div class="card border-warning bg-dark-2 h-100">
+          <div class="card-body p-4 p-md-5">
+            <h3 class="card-title text-warning mb-4">Envíanos un mensaje</h3>
+            
+            <form>
+              <div class="mb-3">
+                <label for="nombre" class="form-label text-white">Nombre</label>
+                <input type="text" class="form-control bg-black text-white border-dark" 
+                       id="nombre" name="nombre" required ngModel>
+              </div>
+              
+              <div class="mb-3">
+                <label for="email" class="form-label text-white">Email</label>
+                <input type="email" class="form-control bg-black text-white border-dark" 
+                       id="email" name="email" required ngModel>
+              </div>
+              
+              <div class="mb-3">
+                <label for="asunto" class="form-label text-white">Asunto</label>
+                <select class="form-select bg-black text-white border-dark" 
+                        id="asunto" name="asunto" required ngModel>
+                  <option value="" disabled selected>Selecciona un tema</option>
+                  <option value="consulta">Consulta general</option>
+                  <option value="pedido">Información sobre pedidos</option>
+                  <option value="producto">Información sobre productos</option>
+                  <option value="soporte">Soporte técnico</option>
+                </select>
+              </div>
+              
+              <div class="mb-4">
+                <label for="mensaje" class="form-label text-white">Mensaje</label>
+                <textarea class="form-control bg-black text-white border-dark" 
+                          id="mensaje" name="mensaje" rows="5" required ngModel></textarea>
+              </div>
+              
+              <button type="submit" class="btn btn-warning btn-lg w-100">
+                Enviar Mensaje
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <!-- Información de contacto -->
+      <div class="col-lg-6">
+        <div class="card border-warning bg-dark-2 h-100">
+          <div class="card-body p-4 p-md-5">
+            <h3 class="card-title text-warning mb-4">Información de contacto</h3>
+            
+            <div class="contact-info">
+              <div class="d-flex mb-4">
+                <div class="me-3 text-warning">
+                  <i class="bi bi-geo-alt-fill fs-3"></i>
+                </div>
+                <div>
+                  <h4 class="h5" style="color: white;">Dirección</h4>
+                  <p class="mb-0" style="color: white;">Calle de la Música 123<br>Ciudad Guitarras, CP 28000</p>
+                </div>
+              </div>
+              
+              <div class="d-flex mb-4">
+                <div class="me-3 text-warning">
+                  <i class="bi bi-telephone-fill fs-3"></i>
+                </div>
+                <div>
+                  <h4 class="h5" style="color: white;">Teléfono</h4>
+                  <p class="mb-0" style="color: white;">+52 477 908 7323<br>Lunes a Viernes: 9:00 - 18:00</p>
+                </div>
+              </div>
+              
+              <div class="d-flex mb-4">
+                <div class="me-3 text-warning">
+                  <i class="bi bi-envelope-fill fs-3"></i>
+                </div>
+                <div>
+                  <h4 class="h5" style="color: white;">Email</h4>
+                  <p class="mb-0" style="color: white;">contacto&#64;.com<br>soporte&#64;.com</p>
+                </div>
+              </div>
+              
+              <div class="d-flex">
+                <div class="me-3 text-warning">
+                  <i class="bi bi-shop fs-3"></i>
+                </div>
+                <div>
+                  <h4 class="h5" style="color: white;">Horario de tienda</h4>
+                  <p class="mb-0" style="color: white;">Lunes a Sábado: 10:00 - 20:00<br>Domingo: 11:00 - 15:00</p>
+                </div>
+              </div>
+            </div>
+            
+            <hr class="my-4 border-secondary">
+            
+            <div class="social-links">
+              <h4 class="h5 text-warning mb-3" style="color: white;">Síguenos</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
